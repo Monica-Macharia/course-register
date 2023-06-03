@@ -53,7 +53,7 @@ class CourseController extends Controller
         $course->teacher_name = $request->input('teacher_name');
         $course->total_hours = $request->input('total_hours');
         $course->save();
-        return response()->json($course, "Course updated");
+        return response()->json($course, 200);
     }
 
     /**
