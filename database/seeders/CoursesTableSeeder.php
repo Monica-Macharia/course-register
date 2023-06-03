@@ -23,6 +23,33 @@ class CoursesTableSeeder extends Seeder
             'name' => 'Node',
             'teacher_name' => 'Zobuto',
             'total_hours' => 70,
+           ],
+           [
+            'name' => 'Javascript',
+            'teacher_name' => 'Kazito',
+            'total_hours' => 10,
+           ],[
+            'name' => 'SQL',
+            'teacher_name' => 'Akisha',
+            'total_hours' => 30,
+           ],
+           [
+            'name' => 'React',
+            'teacher_name' => 'Zarita',
+            'total_hours' => 50,
+           ],[
+            'name' => 'Express',
+            'teacher_name' => 'Katilo',
+            'total_hours' => 40,
+           ],
+           [
+            'name' => 'Vue',
+            'teacher_name' => 'Asimu',
+            'total_hours' => 20,
+           ],[
+            'name' => 'Python',
+            'teacher_name' => 'Kaka',
+            'total_hours' => 50,
            ]
         ];
        
