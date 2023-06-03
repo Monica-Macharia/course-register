@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('courses', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('teacher_name');
+            $table->integer('total_hours');
             $table->timestamps();
         });
     }
