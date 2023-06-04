@@ -18,10 +18,13 @@ use App\Http\Controllers\CourseController;
 |
 */
 Route::get('/courses', [CourseController::class, 'index']);
-Route::get('/courses/{id}', [CourseController::class, 'show']);
-Route::post('/register', [CourseController::class, 'store']);
-Route::put('/edit/{id}', [CourseController::class, 'update']);
-Route::delete('/delete/{id}', [CourseController::class, 'destroy']);
+Route::group(['prefix' => 'courses'], function (){
+    Route::get('/{id}', [CourseController::class, 'show']);
+    Route::post('/register', [CourseController::class, 'store']);
+    Route::put('/edit/{id}', [CourseController::class, 'update']);
+    Route::delete('/delete/{id}', [CourseController::class, 'destroy']);
+ 
+});
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
